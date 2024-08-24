@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctenos - IKOMI PERU</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/" class="active">Inicio</a>
+            <a href="/nosotros">Nosotros</a>
+            <a href="/servicios">Servicios</a>
+            <a href="/producto">Producto</a>
+            <a href="/marcas">Marcas</a>
+            <a href="/equipo">Equipo</a>
+            <a href="/contactenos">Contáctenos</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>CONTÁCTENOS</h1>
+        <p>Llene el formulario y un asesor se pondrá en contacto lo más pronto posible.</p>
+
+        <div class="contact-container">
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.244479045197!2d-122.0853494843749!3d37.42200167982426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb24fcb3db49b%3A0x2e2d4fda118aabc2!2sGoogleplex!5e0!3m2!1sen!2sus!4v1613427026253!5m2!1sen!2sus" 
+                    allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <div class="contact-form">
+                <form action="/contacto" method="POST">
+                    <label for="nombre">Apellidos y Nombres:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+
+                    <label for="correo">Correo:</label>
+                    <input type="email" id="correo" name="correo" required>
+
+                    <label for="asunto">Asunto:</label>
+                    <input type="text" id="asunto" name="asunto" required>
+
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+
+                    <button type="submit">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 IKOMI PERU. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
